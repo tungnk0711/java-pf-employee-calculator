@@ -14,6 +14,11 @@ public class Main {
         System.out.println("Enter number of year: ");
         int numOfYear = scanner.nextInt();
 
-
+        if (coeff >= 1 && coeff <= 5) {
+            salaryOfMonth = coeff * 4000000 + numOfYear * 500000;
+            System.out.printf("Salary: %d", salaryOfMonth);
+        } else {
+            System.out.println("Invalid input");
+        }
     }
 }
